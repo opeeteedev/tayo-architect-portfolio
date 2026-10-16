@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
@@ -56,6 +57,7 @@ export default function RootLayout({
         {children}
         <LoadingScreen />
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   );

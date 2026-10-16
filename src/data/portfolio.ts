@@ -116,13 +116,13 @@ export const clientNames = [
 ];
 
 export const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#portfolio" },
-  { label: "Services", href: "#services" },
-  { label: "Stack", href: "#stack" },
-  { label: "Client Results", href: "#client-results" },
-  { label: "Contact", href: "#contact" }
+  { label: "Home", href: "/#hero" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#portfolio" },
+  { label: "Services", href: "/#services" },
+  { label: "Stack", href: "/#stack" },
+  { label: "Client Results", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" }
 ];
 
 export type Insight = {

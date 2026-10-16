@@ -45,6 +45,19 @@ export default async function InsightPage({ params }: PageProps) {
 
       <main className="mx-auto max-w-3xl px-6 pb-20">
         <article className="space-y-10">
+          <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10 border border-cyan-400/20 bg-gradient-to-br from-[#141416] via-[#0A0A0B] to-[#141416] flex items-center justify-center">
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0h20v20H20V0zm0 20h20v20H20V20zm20-20h20v20H40V0z' fill='%2300D4FF' fill-opacity='0.1'/%3E%3C/svg%3E")`,
+                backgroundSize: "40px 40px",
+              }}
+              aria-hidden="true"
+            />
+            <span className="relative z-10 px-6 py-3 bg-[#D4AF37]/10 border border-[#D4AF37]/40 rounded-full text-[#D4AF37] font-jetbrains-mono text-sm tracking-widest uppercase">
+              {article.category}
+            </span>
+          </div>
           <header className="space-y-4">
             <div className="flex flex-wrap items-center gap-3">
               <span className="px-3 py-1 bg-accent-gold/10 border border-accent-gold/30 rounded-full text-accent-gold text-xs font-medium">

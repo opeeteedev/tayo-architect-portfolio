@@ -24,6 +24,11 @@ export default function Insights() {
               href={`/insights/${insight.id}`}
               className="glow-border block p-8 bg-[#141416] backdrop-blur-sm rounded-2xl hover:shadow-[0_0_30px_rgba(0,212,255,0.15)] transition-all duration-500"
             >
+              <div className="relative w-full h-32 rounded-xl overflow-hidden mb-4 bg-gradient-to-br from-[#141416] to-[#0A0A0B] border border-cyan-400/10 flex items-center justify-center">
+                <span className="text-[#D4AF37] font-jetbrains-mono text-xs tracking-widest uppercase">
+                  {insight.category}
+                </span>
+              </div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 bg-accent-gold/10 border border-accent-gold/30 rounded-full text-accent-gold text-xs font-medium">
                   {insight.category}

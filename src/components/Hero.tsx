@@ -109,42 +109,31 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
-              className="flex flex-wrap gap-4"
-            >
-              <motion.div className="inline-block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a
-                  href="#contact"
-                  className="px-8 py-4 bg-accent-gold text-background font-semibold text-base rounded-full hover:bg-accent-gold/90 transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]"
-                >
-                  Book a Systems Architecture Consultation
-                </a>
-              </motion.div>
-              <motion.div className="inline-block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a
-                  href="#projects"
-                  className="px-8 py-4 border-2 border-accent-cyan/50 text-accent-cyan font-semibold text-base rounded-full hover:bg-accent-cyan/10 transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]"
-                >
-                  View Case Studies
-                </a>
-              </motion.div>
-              <motion.div className="inline-block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  download
-                  className="border border-cyan-400/30 text-[#00D4FF] hover:bg-cyan-400/10 transition-all px-8 py-4 rounded-full font-semibold text-base flex items-center gap-2 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Download CV
-                </a>
-              </motion.div>
-            </motion.div>
+            <div className="flex flex-col md:flex-row flex-wrap gap-4 items-center">
+              <a
+                href="https://cal.com/tayoopeyemi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 bg-accent-gold text-background font-semibold text-sm rounded-full hover:bg-accent-gold/90 transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
+              >
+                Book a Systems Architecture Consultation
+              </a>
+              <a
+                href="/#portfolio"
+                className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 border-2 border-accent-cyan/50 text-accent-cyan font-semibold text-sm rounded-full hover:bg-accent-cyan/10 transition-all"
+              >
+                View Case Studies
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                download
+                className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 border border-cyan-400/30 text-[#00D4FF] hover:bg-cyan-400/10 transition-all rounded-full font-semibold text-sm flex items-center justify-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                Download CV
+              </a>
+            </div>
           </motion.div>
         </div>
 
