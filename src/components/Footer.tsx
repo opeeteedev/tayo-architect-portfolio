@@ -64,8 +64,11 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-accent-cyan/10 text-center">
-          <p className="text-text/40 text-sm">
-            Architected with Next.js 15, Tailwind CSS 4, and an obsession with performance
+          <p className="text-text/40 text-sm inline-flex items-center justify-center gap-3">
+            <span className="font-jetbrains-mono text-xs text-text/30 tracking-widest uppercase">
+              Portfolio v1.0 | Updated October 2026
+            </span>
+            <span>Architected with Next.js 15, Tailwind CSS 4, and an obsession with performance</span>
           </p>
         </div>
       </div>
