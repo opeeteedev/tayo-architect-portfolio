@@ -14,25 +14,15 @@ export default function VideoShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto">
           <div className="glow-border rounded-2xl bg-[#141416]">
             <iframe
               src="https://www.youtube.com/embed/GT6rcPnc-eM"
-              title="AI product video showcase 1"
+              title="AI product video showcase"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="w-full aspect-video"
-            />
-          </div>
-          <div className="glow-border rounded-2xl bg-[#141416]">
-            <iframe
-              src="https://www.youtube.com/embed/GT6rcPnc-eM"
-              title="AI product video showcase 2"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="w-full aspect-video"
+              className="w-full aspect-video rounded-xl border border-cyan-400/20 shadow-[0_0_40px_rgba(0,212,255,0.15)]"
             />
           </div>
         </div>

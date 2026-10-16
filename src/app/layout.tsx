@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
+import LoadingScreen from "@/components/LoadingScreen";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Tayo Portfolio",
@@ -52,6 +54,8 @@ export default function RootLayout({
       </head>
       <body className="bg-[#0A0A0B] text-[#F5F5F7] antialiased min-h-screen flex flex-col">
         {children}
+        <LoadingScreen />
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -79,3 +79,14 @@ body {
   animation: spin-border 4s linear infinite;
   pointer-events: none;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
