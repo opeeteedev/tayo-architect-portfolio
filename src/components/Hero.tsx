@@ -27,7 +27,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full overflow-visible relative min-h-screen flex items-center pt-32 md:pt-20 pb-32" aria-labelledby="hero-heading">
+    <section id="hero" className="w-full overflow-visible relative min-h-screen flex items-center pt-32 md:pt-20 pb-32" aria-labelledby="hero-heading">
       <div className="absolute inset-0 -z-10">
         <div
           className="absolute inset-0 opacity-5"

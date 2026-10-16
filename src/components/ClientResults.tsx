@@ -1,6 +1,6 @@
 export default function ClientResults() {
   return (
-    <section id="client-results" className="py-20 md:py-32 px-6" aria-labelledby="client-results-heading">
+    <section id="testimonials" className="py-20 md:py-32 px-6" aria-labelledby="client-results-heading">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent-gold/10 border border-accent-gold/30 rounded-full text-accent-gold text-sm font-medium mb-4">
