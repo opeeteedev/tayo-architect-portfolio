@@ -31,7 +31,7 @@ export const portfolioProjects: PortfolioProject[] = [
     challenge: "The client's legacy monolithic platform was crashing under heavy user load. Deployments took hours and often caused downtime. They needed a scalable architecture.",
     solution: "I architected a microservices based solution using Next.js 15, AWS ECS, and edge caching. I established a CI/CD pipeline with zero downtime deployments.",
     results: "Achieved a 100/100 Lighthouse performance score. Uptime improved to 99.9 percent. Cloud infrastructure costs were reduced by 35 percent.",
-    gallery: ["/chatalyst-api.png", "/nexora-dashboard.png"]
+    gallery: ["/chatalyst-api.png", "/dataflow-pipeline.png"]
   },
   {
     id: "shopify-luxury",
@@ -42,7 +42,7 @@ export const portfolioProjects: PortfolioProject[] = [
     challenge: "The client had a beautiful store but a 1.2 second load time and a high cart abandonment rate. They needed a complete technical overhaul without losing their brand identity.",
     solution: "I rebuilt the theme from scratch using a custom Next.js frontend and optimized Shopify Liquid. I also integrated automated AI video showcases for their top products to increase engagement.",
     results: "Site speed improved to a 95 plus Lighthouse score. Conversion rate increased by 3.2x within the first month. Cart abandonment dropped by 40 percent.",
-    gallery: ["/order-processing.png", "/nexora-dashboard.png"]
+    gallery: ["/nexora-dashboard.png", "/order-processing.png"]
   }
 ];
 

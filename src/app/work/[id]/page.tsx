@@ -106,35 +106,27 @@ export default async function CaseStudyPage({ params }: PageProps) {
               <h2 className="text-2xl md:text-3xl font-serif font-medium text-accent-gold mb-4 border-b border-accent-cyan/20 pb-2">
                 Project Gallery
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {project.gallery.map((image, index) =>
-                  image === "placeholder" ? (
-                    <div
-                      key={index}
-                      className="h-64 md:h-80 rounded-xl border border-cyan-400/20 flex items-center justify-center"
-                      style={{
-                        backgroundColor: "#141416",
-                        backgroundImage: `
-                          linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px)
-                        `,
-                        backgroundSize: "32px 32px"
-                      }}
-                    >
-                      <span className="font-serif text-accent-gold text-lg">
-                        Project Visual Coming Soon
-                      </span>
-                    </div>
-                  ) : (
-                    <img 
-                      key={index}
-                      src={`${image}?v=2`} 
-                      alt={`${project.title} gallery image ${index + 1}`} 
-                      className="w-full h-auto rounded-xl border border-cyan-400/20" 
-                    />
-                  )
-                )}
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  {project.gallery.map((image, index) => (
+    <div 
+      key={index} 
+      className="relative w-full aspect-video rounded-xl border border-cyan-400/20 bg-[#141416] overflow-hidden flex flex-col items-center justify-center"
+    >
+      {image === "placeholder" ? (
+        <div className="text-center">
+          <span className="block text-2xl font-serif text-[#D4AF37] tracking-widest mb-2">Coming Soon</span>
+          <span className="text-sm text-[#9CA3AF]">Project Visual {index + 1}</span>
+        </div>
+      ) : (
+        <img 
+          src={image} 
+          alt={`${project.title} gallery image ${index + 1}`} 
+          className="w-full h-full object-cover" 
+        />
+      )}
+    </div>
+  ))}
+</div>
             </section>
           </div>
 
