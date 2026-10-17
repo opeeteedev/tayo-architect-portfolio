@@ -28,15 +28,10 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="glow-border bg-[#141416] backdrop-blur-sm rounded-2xl p-8 mt-12 text-center"
         >
-          <p className="text-text/70 mb-8 max-w-xl mx-auto leading-relaxed">
-            I prefer to keep things simple. Click below to open your email client with a pre-filled subject line.
-          </p>
-          <a
-            href="mailto:opeyemitecharchitect@gmail.com?subject=New Project Inquiry"
-            className="inline-block px-10 py-4 bg-accent-gold text-background font-semibold text-base rounded-full hover:bg-accent-gold/90 transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
-          >
-            Send Me an Email
-          </a>
+          <h3 className="text-lg md:text-xl text-text mb-6">Book Your Free Strategy Call</h3>
+          <div className="w-full h-[600px] rounded-2xl overflow-hidden border border-cyan-400/20 bg-[#141416]">
+            <iframe src="https://cal.com/tayoopeyemi" className="w-full h-full border-0" />
+          </div>
         </motion.div>
       </div>
     </section>

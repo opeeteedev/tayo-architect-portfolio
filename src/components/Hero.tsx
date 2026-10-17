@@ -62,20 +62,13 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-cyan opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-cyan" />
               </span>
-              Systems Architect & Engineering Lead
+              AI & SaaS Solutions for Founders
             </motion.span>
 
-            <motion.h1
-              id="hero-heading"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-playfair font-light text-text leading-[1.1] tracking-tight"
-            >
-              Building Scalable
-              <br />
-              <span className="font-medium text-accent-gold">Digital Foundations</span>
-            </motion.h1>
+            <h1 id="hero-heading" className="text-5xl md:text-6xl lg:text-7xl font-sans font-bold tracking-tight leading-[1.1] mb-6">
+              <span className="block text-[#F5F5F7] uppercase">High-Converting</span>
+              <span className="block text-accent-gold uppercase">Web Apps & AI Systems</span>
+            </h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -83,8 +76,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="text-lg md:text-xl text-text/70 max-w-xl leading-relaxed"
             >
-              I architect resilient, high performance systems that scale. From distributed
-              architectures to pixel perfect interfaces — engineering with intention.
+              Stop losing revenue to slow websites and manual workflows. I help founders launch scalable MVPs and automate their operations so they can focus on growing their business.
             </motion.p>
 
             <motion.div
@@ -116,13 +108,13 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 bg-accent-gold text-background font-semibold text-sm rounded-full hover:bg-accent-gold/90 transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
               >
-                Book a Systems Architecture Consultation
+                Book a Free Strategy Call
               </a>
               <a
                 href="/#portfolio"
                 className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 border-2 border-accent-cyan/50 text-accent-cyan font-semibold text-sm rounded-full hover:bg-accent-cyan/10 transition-all"
               >
-                View Case Studies
+                See My Work
               </a>
               <a
                 href="/resume.pdf"
@@ -131,9 +123,12 @@ export default function Hero() {
                 className="w-full md:w-auto text-center whitespace-nowrap px-6 py-3 border border-cyan-400/30 text-[#00D4FF] hover:bg-cyan-400/10 transition-all rounded-full font-semibold text-sm flex items-center justify-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-                Download CV
+                Download Resume
               </a>
             </div>
+            <p className="text-sm text-[#00D4FF] font-semibold mt-6 flex items-center gap-2">
+              Risk-Free Milestones. You only release the next payment after you sign off on the current phase.
+            </p>
           </motion.div>
         </div>
 

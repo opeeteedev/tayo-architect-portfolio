@@ -20,7 +20,7 @@ export const portfolioProjects: PortfolioProject[] = [
     challenge: "Manual data processing and fragmented workflows were costing the client hundreds of hours per week. They needed a system that could think, route, and execute autonomously.",
     solution: "Built a multi-agent orchestration system using custom LLMs, Chatalyst API integration, and automated data pipelines to handle complex workflows end-to-end.",
     results: "10,000+ tasks automated within the first month. 99.5% success rate. Reduced manual operational overhead by 80%.",
-    gallery: ["/dataflow-pipeline.png.png", "/nexus-orchestration.png.png"]
+    gallery: ["/dataflow-pipeline.png", "/nexus-orchestration.png"]
   },
   {
     id: "saas-arch",
@@ -31,7 +31,7 @@ export const portfolioProjects: PortfolioProject[] = [
     challenge: "The client's legacy monolithic platform was crashing under heavy user load. Deployments took hours and often caused downtime. They needed a scalable architecture.",
     solution: "I architected a microservices based solution using Next.js 15, AWS ECS, and edge caching. I established a CI/CD pipeline with zero downtime deployments.",
     results: "Achieved a 100/100 Lighthouse performance score. Uptime improved to 99.9 percent. Cloud infrastructure costs were reduced by 35 percent.",
-    gallery: ["/chatalyst-api.png.png", "/nexora-dashboard.png.png"]
+    gallery: ["/chatalyst-api.png", "/nexora-dashboard.png"]
   },
   {
     id: "shopify-luxury",
@@ -42,7 +42,7 @@ export const portfolioProjects: PortfolioProject[] = [
     challenge: "The client had a beautiful store but a 1.2 second load time and a high cart abandonment rate. They needed a complete technical overhaul without losing their brand identity.",
     solution: "I rebuilt the theme from scratch using a custom Next.js frontend and optimized Shopify Liquid. I also integrated automated AI video showcases for their top products to increase engagement.",
     results: "Site speed improved to a 95 plus Lighthouse score. Conversion rate increased by 3.2x within the first month. Cart abandonment dropped by 40 percent.",
-    gallery: ["/order-processing.png.png", "/nexora-dashboard.png.png"]
+    gallery: ["/order-processing.png", "/nexora-dashboard.png"]
   }
 ];
 
@@ -67,7 +67,7 @@ export const services: Service[] = [
   },
   {
     title: "Business Process Automation",
-    description: "Streamline operations with intelligent workflow automation that eliminates manual, repetitive tasks.",
+    description: "Custom automation pipelines that eliminate manual work.",
     features: ["n8n & Make Workflows", "API Integrations", "Data Synchronization", "Operational Dashboards"]
   },
   {
@@ -82,12 +82,12 @@ export const services: Service[] = [
   },
   {
     title: "Data Engineering & Analytics",
-    description: "Turn raw data into actionable insights with modern ETL pipelines and real-time analytics dashboards.",
+    description: "ETL Pipelines, Real-Time Dashboards, Data Warehousing, Predictive Analytics.",
     features: ["ETL Pipelines", "Real-Time Dashboards", "Data Warehousing", "Predictive Analytics"]
   },
   {
     title: "Cloud & DevOps Engineering",
-    description: "Reliable, scalable infrastructure with automated deployment pipelines for cloud-native applications.",
+    description: "Infrastructure that scales automatically and never goes down.",
     features: ["AWS & Vercel Deployment", "CI/CD Pipelines", "Docker & Serverless", "Infrastructure as Code"]
   },
   {
